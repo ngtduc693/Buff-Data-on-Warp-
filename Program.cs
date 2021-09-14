@@ -18,7 +18,7 @@ namespace WARP_Buff
                 if (userID.Trim().Length == 0)
                     Console.WriteLine("[+] Your user ID is not valid, please try again!");
             }
-            while (userID.Trim().Length > 0);
+            while (userID.Trim().Length <= 0);
             account.BuffData(userID);
         }
     }
